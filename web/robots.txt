@@ -1,0 +1,16 @@
+# robots.txt para Reformas Mazur
+# Indica a los motores de búsqueda qué secciones pueden rastrear
+
+User-agent: *
+Allow: /
+
+# Evita rastrear archivos técnicos o carpetas que no aportan contenido útil
+Disallow: /css/
+Disallow: /js/
+Disallow: /lib/
+Disallow: /mail/
+Disallow: /vendor/
+Disallow: /fonts/
+
+# Indica la ubicación del sitemap
+Sitemap: https://reformasmazur.com/sitemap.xml
