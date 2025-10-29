@@ -25,6 +25,10 @@
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css">
+
+
+    <link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
+    <script src="https://calendar.google.com/calendar/scheduling-button-script.js" defer></script>
 </head>
 
 <body>
@@ -79,8 +83,8 @@
                     </button>
                     <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                         <div class="navbar-nav mr-auto py-0">
-                            <a href="index.html" class="nav-item nav-link active">Inicio</a>
-                            <a href="about.html" class="nav-item nav-link">Sobre mí</a>
+                            <a href="index.html" class="nav-item nav-link">Inicio</a>
+                            <a href="about.html" class="nav-item nav-link active">Sobre mí</a>
                             <a href="contact.html" class="nav-item nav-link">Contacto</a>
                             <div class="nav-item dropdown">
                                <a href="service.html" class="nav-link dropdown-toggle" data-toggle="dropdown">Especialidades</a>
@@ -92,7 +96,21 @@
                             </div>
                             
                         </div>
-                        <a href="contact.html" class="btn btn-dark mr-3 d-none d-lg-block">Solicitar una cita</a>
+                    <!-- start Google Calendar Appointment Scheduling -->       
+                    <script>
+                    (function() {
+                    var target = document.currentScript;
+                    window.addEventListener('load', function() {
+                        calendar.schedulingButton.load({
+                        url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ0KxYABBbsvFFKEOW18kVCHKh37o1UHrgVJEPYzjvqQzWzVoi2uNCjGPRXeKjpzedaqekYY3cMq?gv=true',
+                        color: '#343a40',
+                        label: 'Solicitar una cita',
+                        target,
+                        });
+                    });
+                    })();
+                    </script>
+                    <!-- end Google Calendar Appointment Scheduling -->
                     </div>
                 </nav>
             </div>
