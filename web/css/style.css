@@ -6368,10 +6368,10 @@ button.bg-primary:focus {
 .bg-secondary4 {
       background: linear-gradient(90deg, #ff8fa9 0%, #e6007e 50%, #a4de02 75%, #FFFFFF 100%);
 }
-.bg-secondary {
+.bg-secondary2 {
       background: linear-gradient(90deg, #0029ff 0%, #c1fb38 50%, #ff8fa9 75%, #FFFFFF 100%);
 }
-.bg-secondary2 {
+.bg-secondary {
       background: linear-gradient(90deg, #E9DEFF 0%, #D7F3E6 50%, #FFFFFF 100%);
 }
 
