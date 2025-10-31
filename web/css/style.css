@@ -6365,7 +6365,13 @@ button.bg-primary:focus {
   background-color: #9f8455 !important;
 }
 
+.bg-secondary4 {
+      background: linear-gradient(90deg, #ff8fa9 0%, #e6007e 50%, #a4de02 75%, #FFFFFF 100%);
+}
 .bg-secondary {
+      background: linear-gradient(90deg, #0029ff 0%, #c1fb38 50%, #ff8fa9 75%, #FFFFFF 100%);
+}
+.bg-secondary2 {
       background: linear-gradient(90deg, #E9DEFF 0%, #D7F3E6 50%, #FFFFFF 100%);
 }
 
@@ -9816,7 +9822,7 @@ h4, h5, h6 {
 }
 
 .bg-action {
-  background: linear-gradient(rgba(55, 55, 63, 0.7), rgba(55, 55, 63, 0.7)), url(../img/carousel-2.jpg), no-repeat center center;
+  background: linear-gradient(rgba(55, 55, 63, 0.7), rgba(55, 55, 63, 0.7)), url(../img/contacto.png), no-repeat center center;
   background-size: cover;
 }
 
