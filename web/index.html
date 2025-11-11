@@ -104,70 +104,66 @@
 
 
     <!-- Carousel Start -->
-    <div class="container-fluid p-0 mb-5 pb-5">
-        <div id="header-carousel" class="carousel slide carousel-fade" data-ride="carousel">
+        <div class="container-fluid p-0 mb-5 pb-5">
+        <div id="header-carousel" class="carousel slide carousel-fade" data-ride="carousel" data-interval="6000" data-pause="hover">
             <div class="carousel-inner">
-                <div class="carousel-item position-relative active" style="height: 100vh; min-height: 400px;">
-                    <img class="position-absolute w-100 h-100" src="img/despacho.png" style="object-fit: cover;">
-                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
-                        <div class="p-3" style="max-width: 900px;">
-                            <h4 class="text-white text-uppercase mb-4" style="letter-spacing: 3px;">Inicio</h4>
-                            <h3 class="display-2 text-capitalize text-white mb-4">Tu salud mental merece tiempo y atención.</h3>
-                               <!-- start Google Calendar Appointment Scheduling -->       
-                    <script>
-                    (function() {
-                    var target = document.currentScript;
-                    window.addEventListener('load', function() {
-                        calendar.schedulingButton.load({
-                        url: 'https://calendar.google.com/calendar/appointments/AcZssZ3oTHK7aVM3SP2_AgRVnGlZB0OpY_NuOf52wvg=?gv=true',
-                        color: '#343a40',
-                        label: 'Reservar una cita',
-                        target,
-                        });
-                    });
-                    })();
-                    </script>
-                    <!-- end Google Calendar Appointment Scheduling -->
+
+            <!-- SLIDE 1 -->
+            <div class="carousel-item active">
+                <section class="hero-psico w-100" style="--hero-bg:#f8b9c3; --card-bg:#f58da3; --accent:#e06a1b;">
+                <div class="container">
+                    <div class="row align-items-center">
+                    <div class="col-12 col-md-6 mb-4 mb-md-0">
+                        <h1 class="hero-title">
+                        Buscar ayuda<br>también es<br><span class="accent">cuidarte.</span>
+                        </h1>
+                        <div class="gc-cta"></div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="portrait-card">
+                        <!-- usa tu PNG recortado -->
+                        <img src="img/Merchu2.jpg" alt="Psicóloga" class="hero-photo" loading="eager">
                         </div>
                     </div>
-                </div>
-                <div class="carousel-item position-relative" style="height: 100vh; min-height: 400px;">
-                    <img class="position-absolute w-100 h-100" src="img/despacho.png" style="object-fit: cover;">
-                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
-                        <div class="p-3" style="max-width: 900px;">
-                            <h4 class="text-white text-uppercase mb-4" style="letter-spacing: 3px;">Inicio</h4>
-                            <h3 class="display-2 text-capitalize text-white mb-4">Psicología basada en la escucha, la empatía y la evidencia.</h3>
-                            <!-- start Google Calendar Appointment Scheduling -->       
-                    <script>
-                    (function() {
-                    var target = document.currentScript;
-                    window.addEventListener('load', function() {
-                        calendar.schedulingButton.load({
-                        url: 'https://calendar.google.com/calendar/appointments/AcZssZ3oTHK7aVM3SP2_AgRVnGlZB0OpY_NuOf52wvg=?gv=true',
-                        color: '#343a40',
-                        label: 'Reservar una cita',
-                        target,
-                        });
-                    });
-                    })();
-                    </script>
-                    <!-- end Google Calendar Appointment Scheduling -->
-                        </div>
                     </div>
                 </div>
+                </section>
             </div>
-            <a class="carousel-control-prev" href="#header-carousel" data-slide="prev">
-                <div class="btn btn-lg btn-secondary btn-lg-square">
-                    <span class="carousel-control-prev-icon"></span>
+
+            <!-- SLIDE 2 (mismos contenidos, colores e imagen pueden variar) -->
+            <div class="carousel-item">
+                <section class="hero-psico w-100" style="--hero-bg:#ffd6e0; --card-bg:#fca4b9; --accent:#d66a17;">
+                <div class="container">
+                    <div class="row align-items-center">
+                    <div class="col-12 col-md-6 mb-4 mb-md-0">
+                        <h1 class="hero-title">
+                        Psicología basada en<br>escucha y evidencia.
+                        </h1>
+                        <div class="gc-cta"></div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="portrait-card">
+                        <!-- puedes reutilizar la misma imagen o cambiarla -->
+                        <img src="img/Merchu3.jpg" alt="Psicóloga" class="hero-photo" loading="lazy">
+                        </div>
+                    </div>
+                    </div>
                 </div>
+                </section>
+            </div>
+
+            </div>
+
+            <!-- Controles -->
+            <a class="carousel-control-prev" href="#header-carousel" role="button" data-slide="prev" aria-label="Anterior">
+            <div class="btn btn-lg btn-secondary btn-lg-square"><span class="carousel-control-prev-icon"></span></div>
             </a>
-            <a class="carousel-control-next" href="#header-carousel" data-slide="next">
-                <div class="btn btn-lg btn-secondary btn-lg-square">
-                    <span class="carousel-control-next-icon"></span>
-                </div>
+            <a class="carousel-control-next" href="#header-carousel" role="button" data-slide="next" aria-label="Siguiente">
+            <div class="btn btn-lg btn-secondary btn-lg-square"><span class="carousel-control-next-icon"></span></div>
             </a>
         </div>
-    </div>
+        </div>
+
     <!-- Carousel End -->
 
 
@@ -176,16 +172,18 @@
         <div class="container py-5">
             <div class="row">
                 <div class="col-lg-5">
-                    <img class="img-fluid rounded" src="img/users.png" alt="">
+                    <img class="img-fluid rounded" src="img/Merchu2.jpg" alt="">
                 </div>
                 <div class="col-lg-7 mt-4 mt-lg-0">
                    <!-- <h2 class="position-relative text-center bg-white text-primary rounded p-3 mt-4 mb-4 d-none d-lg-block" style="width: 350px; margin-left: -205px;">+25 años de experiencia</h2> -->
                     <h6 class="text-uppercase">Sobre Mí</h6>
                     <h1 class="mb-4">Merce Martín</h1>
-                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                           Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                    <p>¡Hola! Soy Merce y soy psicóloga, sexóloga y terapeuta de parejas. 
+Mi especialidad es el trabajo con mujeres, desde la psicología perinatal hasta la violencia de género. Aunque también tengo amplia experiencia en el trabajo con parejas del colectivo. 
+Me apasiona mi trabajo, por lo que el hecho de tener cierta especialidad no quita que me guste trabajar con diferentes problemáticas. Me gusta adaptarme a cada persona y crear un proceso terapéutico único. 
+Actualmente la atención psicológica es tanto presencial en Alcorcón como online, así podrás conectarte sin problema y recibir los servicios que necesites. 
+Por último, quiero señalar que si estás leyendo esta descripción posiblemente es porque estás buscando un profesional que te guíe, así que enhorabuena porque pedir ayuda es un paso muy valiente.
+</p>
                     <a href="about.html" class="btn btn-secondary mt-2">Más sobre mí</a>
                 </div>
             </div>
@@ -200,11 +198,14 @@
             <div class="row">
                 <div class="col-lg-3">
                     <h6 class="text-uppercase">Mis Servicios</h6>
-                    <h1 class="mb-4">Servicios</h1>
-                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                         Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                    <h1 class="mb-4">Elige el servicio que necesitas.</h1>
+                    <p>La psicoterapia es un proceso que te permitirá aprender a gestionar tus emociones y tomar decisiones, lo que te acercará a un bienestar emocional y a un aumento de tu autonomía personal. 
+Mi enfoque de terapia es individualizado, por lo que tú decides el ritmo y juntas diseñamos el camino. Además, como a veces pedir ayuda no siempre es fácil, contarás con un espacio seguro, cálido y cercano donde puedas hablar de lo que te preocupa con total confianza cuando estés preparad@. 
+Además, como cada persona es única, también ofrezco diferentes modalidades para que puedas escoger la que mejor se adapte a tus necesidades, tiempos y preferencias. Puedes optar por sesiones presenciales si te sientes más cómod@ con el contacto directo y un espacio confidencial preparado especialmente para ti. Pero también está la alternativa de la terapia online,
+ para que puedas recibir acompañamiento profesional desde cualquier lugar, con la misma calidad y cercanía. Así que, si sientes que ha llegado el momento de priorizarte y empezar un proceso de psicoterapia, estoy aquí para acompañarte.
+Agenda tu primera sesión y comienza el cambio.
+
+</p>
                     <a href="service.html" class="btn btn-secondary mt-2">Más Especialidades</a>
                 </div>
                 <div class="col-lg-9 pt-5 pt-lg-0">
@@ -216,21 +217,21 @@
                                 
                             </div>
                             <h5 class="mb-4 px-4">Terapia individual</h5>
-                            <p class="m-0">Descripcion</p>
+                            <p class="m-0">Crea es un espacio seguro y confidencial donde puedas explorar tus pensamientos, emociones y experiencias a tu propio ritmo.</p>
                         </div>
                         <div class="d-flex flex-column align-items-center text-center bg-white rounded pt-4">
                             <div class="icon-box bg-tertiary text-primary mt-2 mb-4">
                                 <i class="fa fa-2x fa-user-friends"></i>
                             </div>
                             <h5 class="mb-4 px-4">Terapia en pareja</h5>
-                            <p class="m-0">Descripción</p>
+                            <p class="m-0">Crea un lugar seguro donde podáis comunicaros desde la escucha, el amor y el respeto, guiados por una mirada profesional y neutral.</p>
                         </div>
                         <div class="d-flex flex-column align-items-center text-center bg-white rounded pt-4">
                             <div class="icon-box bg-tertiary text-primary mt-2 mb-4">
                                 <i class="fa fa-2x fa-wine-glass-alt"></i>
                             </div>
                             <h5 class="mb-4 px-4">Terapia sexologia</h5>
-                            <p class="m-0">Descripción</p>
+                            <p class="m-0">Crea un espacio donde explorar con cuidado y sensibilidad las experiencias, creencias, miedos o expectativas que puedan estar influyendo en tu bienestar sexual. </p>
                         </div>
 
                     </div>
@@ -279,7 +280,7 @@
                 <div class="col-lg-6" style="min-height: 400px;">
                     <div class="position-relative h-100 rounded overflow-hidden">
                         <iframe style="width: 100%; height: 100%; object-fit: cover;"
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6083.420205404166!2d-3.8574875236012076!3d40.326590961119976!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd418e9d5650abb1%3A0xb3248dbe34b13e1a!2sC.%20Berardo%20Martin%2C%203%2C%2028937%20M%C3%B3stoles%2C%20Madrid!5e0!3m2!1ses!2ses!4v1760380859996!5m2!1ses!2ses"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3040.641671602886!2d-3.8259681!3d40.3502943!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd41894eead03c67%3A0xa5c26b85509d6ce6!2sSCP%20Salud!5e0!3m2!1ses!2ses!4v1762891977056!5m2!1ses!2ses" 
                         frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                     </div>
                 </div>
