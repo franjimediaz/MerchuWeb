@@ -2409,14 +2409,14 @@ fieldset:disabled a.btn {
 
 .btn-secondary {
   color: #fff;
-  background-color: #37373F;
-  border-color: #37373F;
+  background-color: #FF00A1;
+  border-color: #ff83d1;
 }
 
 .btn-secondary:hover {
   color: #fff;
-  background-color: #25252b;
-  border-color: #1f1f24;
+  background-color: #ff83d1;
+  border-color: #FF00A1;
 }
 
 .btn-secondary:focus, .btn-secondary.focus {
@@ -4057,7 +4057,7 @@ input[type="button"].btn-block {
 
 .nav-tabs .nav-link.active,
 .nav-tabs .nav-item.show .nav-link {
-  color: #495057;
+  color: #574951;
   background-color: #fff;
   border-color: #dee2e6 #dee2e6 #fff;
 }
@@ -9794,7 +9794,7 @@ h4, h5, h6 {
 
 .navbar-light .navbar-nav .nav-link:hover,
 .navbar-light .navbar-nav .nav-link.active {
-  color: #007bff;
+  color: #FF00A1;
 }
 
 @media (max-width: 991.98px) {
@@ -10000,4 +10000,26 @@ h4, h5, h6 {
     height: 50vh;
   }
   .hero-photo-mid{ height:100%; object-fit:contain; filter:drop-shadow(0 12px 24px rgba(0,0,0,.15)); }
+}
+.whatsapp-float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 20px;
+  left: 20px;
+  background-color: #25d366;
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 3px rgba(0,0,0,0.3);
+  z-index: 1000;
+  transition: transform 0.3s;
+}
+.whatsapp-float:hover {
+  transform: scale(1.1);
+  color: white;
+}
+.whatsapp-float i {
+  margin-top: 16px;
 }
