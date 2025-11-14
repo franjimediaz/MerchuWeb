@@ -6538,6 +6538,9 @@ button.bg-dark:focus {
 .rounded {
   border-radius: 5px !important;
 }
+.ball {
+  border-radius: 50% !important;
+}
 
 .rounded-top {
   border-top-left-radius: 5px !important;
@@ -7869,10 +7872,7 @@ button.bg-dark:focus {
   padding-right: 3rem !important;
 }
 
-.pb-5,
-.py-5 {
-  padding-bottom: 3rem !important;
-}
+
 
 .pl-5,
 .px-5 {
@@ -9541,7 +9541,7 @@ button.bg-dark:focus {
 }
 
 .text-primary {
-  color: #E9DEFF !important;
+  color: #fcc0c5 !important;
 }
 
 a.text-primary:hover, a.text-primary:focus {
