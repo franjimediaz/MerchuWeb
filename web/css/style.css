@@ -58,7 +58,7 @@ body {
   font-family: "Montserrat", sans-serif;
   font-size: 1rem;
   font-weight: 400;
-  line-height: 1.5;
+  line-height: 1.2;
   color: #757575;
   text-align: left;
   background-color: #fff;
@@ -9942,7 +9942,7 @@ h4, h5, h6 {
 .btn-cta{ display:inline-block; background:var(--btn-bg); color:var(--btn-txt); border-radius:999px; padding:12px 20px; font-weight:600; border:0; box-shadow:0 1px 0 rgba(0,0,0,.05), 0 6px 20px rgba(0,0,0,.08); transition:transform .15s, box-shadow .2s; }
 .btn-cta:hover{ transform:translateY(-1px); box-shadow:0 8px 26px rgba(0,0,0,.12); }
 .portrait-card{ background:var(--card-bg); border-radius:var(--radius-xl); padding:clamp(12px,2.5vw,20px); width:100%;  display:grid; place-items:center; overflow:hidden; }
-.hero-photo{ width:100%; height:100%; object-fit:contain; filter:drop-shadow(0 12px 24px rgba(0,0,0,.15)); }
+.hero-photo{ width:120%; height:100%; object-fit:contain; filter:drop-shadow(0 12px 24px rgba(0,0,0,.15)); }
 .hero-photo-mid{ height:100%; object-fit:contain; filter:drop-shadow(0 12px 24px rgba(0,0,0,.15)); }
 @media (max-width: 767.98px){ .hero-psico{ padding:40px 0; } .portrait-card{ aspect-ratio:1/1; } }
 
@@ -10022,4 +10022,41 @@ h4, h5, h6 {
 }
 .whatsapp-float i {
   margin-top: 16px;
+}
+.entrevista-foto img {
+  object-fit: cover;
+  width: 100%;
+  min-height: 260px;
+}
+
+.entrevista-destacado {
+  border-left: 4px solid rgba(255, 255, 255, 0.9);
+  position: relative;
+}
+
+.entrevista-destacado .fa-quote-left {
+  opacity: 0.8;
+}
+
+.entrevista-bloque + .entrevista-bloque {
+  margin-top: 1.5rem;
+}
+
+.entrevista-pregunta {
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+}
+
+.entrevista-respuesta {
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+  color: #555;
+  line-height: 1.7;
+}
+
+@media (max-width: 767.98px) {
+  .entrevista-destacado {
+    padding: 1.25rem;
+  }
 }
