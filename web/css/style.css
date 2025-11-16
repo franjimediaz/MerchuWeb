@@ -10060,3 +10060,54 @@ h4, h5, h6 {
     padding: 1.25rem;
   }
 }
+#faqAccordion .card {
+    border: none;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+}
+
+#faqAccordion .card-header {
+    background: #f0f0f0;
+}
+
+#faqAccordion .btn-link {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    text-decoration: none;
+}
+
+#faqAccordion .btn-link:hover {
+    color: #555;
+}
+
+#faqAccordion .card-body {
+    background: #fff;
+    font-size: 16px;
+}
+
+.item-reconecta {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 1rem 1.4rem;
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border-left: 5px solid #FF00A1;
+  border-right: 5px solid #FF00A1;
+}
+
+.item-reconecta:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1);
+  background: #fff0f5;
+}
+
+.item-reconecta .bullet {
+  display: none; /* innecesario para este estilo */
+}
+
+
