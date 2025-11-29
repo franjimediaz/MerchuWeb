@@ -6374,8 +6374,11 @@ button.bg-primary:focus {
 .bg-secondary3 {
       background: linear-gradient(90deg, #E9DEFF 0%, #D7F3E6 50%, #FFFFFF 100%);
 }
-.bg-secondary {
+.bg-secondary1 {
       background: linear-gradient(90deg, #fcc0c5 0%, #fcc0c5 50%, #FFFFFF 100%);
+}
+.bg-secondary {
+      background: #fcc0c5;
 }
 
 a.bg-secondary:hover, a.bg-secondary:focus,
