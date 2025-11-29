@@ -13,4 +13,4 @@ Disallow: /vendor/
 Disallow: /fonts/
 
 # Indica la ubicación del sitemap
-Sitemap: https://reformasmazur.com/sitemap.xml
+Sitemap: https://mercemartinpsicologa.com/sitemap.xml
