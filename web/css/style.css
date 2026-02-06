@@ -10741,7 +10741,7 @@ h4, h5, h6 {
    ========================= */
 .heroPro{
   position: relative;
-  padding: 72px 0;
+  padding: 72px 200;
   background: #fff;
   overflow: hidden;
   border-bottom: 1px solid rgba(0,0,0,0.06);
