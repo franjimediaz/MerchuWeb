@@ -10090,10 +10090,18 @@ h4, h5, h6 {
     font-size: 16px;
 }
 
+.lista-reconecta{
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 2rem; 
+}
+
 .item-reconecta {
   background: #ffffff;
   border-radius: 12px;
   padding: 1rem 1.4rem;
+  padding-left: 0;
+  list-style: none;
   justify-content: center !important;
   display: flex;
   text-align: center !important;
@@ -10103,6 +10111,8 @@ h4, h5, h6 {
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   border-left: 5px solid #FF00A1;
   border-right: 5px solid #FF00A1;
+  margin-bottom: 2rem;
+  margin: 2;  
 }
 
 .item-reconecta:hover {
@@ -10112,15 +10122,22 @@ h4, h5, h6 {
 }
 
 .item-reconecta .bullet {
-  display: none; /* innecesario para este estilo */
+  display: none;
+
+}
+.lista-reconecta > li{
+  padding-left: 0 !important;
+  margin-left: 0 !important;
 }
 
 @media (max-width: 768px) {
   .item-reconecta {
-    text-align: center;           /* Mantiene el centrado del texto */
+    text-align: left !important;           /* Mantiene el centrado del texto */
     width: max-content;           /* Ajusta el ancho al contenido */
     margin-left: auto;
     margin-right: auto;
+    justify-content: flex-start !important;
+    align-items: flex-start;
     transform: translateX(-5%);  /* Lo mueve un poco hacia la izquierda */
   }
 }
