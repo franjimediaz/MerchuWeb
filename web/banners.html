@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Banners - Ejemplos</title>
+
+  <!-- Tu bootstrap ya existe en tu proyecto; si lo pruebas aislado, añade CDN -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body class="bg-light">
+
+  <header class="container py-5">
+    <h1 class="mb-2">Banners de ejemplo</h1>
+    <p class="text-muted mb-0">Varios estilos para reutilizar en secciones, home, landings o CTA.</p>
+  </header>
+
+  <main class="container pb-5 demo-banners">
+
+    <!-- 1) Banner minimal / aviso -->
+    <section class="banner banner--notice mb-4">
+      <div class="banner__inner">
+        <div class="banner__content">
+          <span class="badge badge-pill badge-dark banner__badge">NOVEDAD</span>
+          <p class="banner__text mb-0">Reserva online disponible. Elige día y hora en menos de 1 minuto.</p>
+        </div>
+        <a class="btn btn-sm btn-primary banner__btn" href="#">Reservar</a>
+      </div>
+    </section>
+
+    <!-- 2) Banner gradiente con CTA -->
+    <section class="banner banner--gradient mb-4">
+      <div class="banner__inner">
+        <div class="banner__content">
+          <h2 class="banner__title">Tu bienestar mental, con un plan claro</h2>
+          <p class="banner__subtitle mb-0">Sesiones online o presenciales. Enfoque práctico y basado en evidencia.</p>
+          <div class="banner__actions">
+            <a class="btn btn-light" href="#">Ver servicios</a>
+            <a class="btn btn-outline-light" href="#">Contacto</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3) Banner split (texto + imagen) -->
+    <section class="banner banner--split mb-4">
+      <div class="banner__split">
+        <div class="banner__splitText">
+          <h2 class="banner__title">Primera toma de contacto</h2>
+          <p class="banner__subtitle">Cuéntame tu caso y te propongo los siguientes pasos de forma sencilla.</p>
+          <ul class="banner__list">
+            <li>Objetivos realistas</li>
+            <li>Herramientas para el día a día</li>
+            <li>Seguimiento y adaptación</li>
+          </ul>
+          <div class="banner__actions">
+            <a class="btn btn-primary" href="#">Empezar</a>
+            <a class="btn btn-outline-secondary" href="#">Cómo trabajo</a>
+          </div>
+        </div>
+        <div class="banner__splitMedia" aria-hidden="true"></div>
+      </div>
+    </section>
+
+    <!-- 4) Banner con imagen + overlay -->
+    <section class="banner banner--image mb-4">
+      <div class="banner__inner">
+        <div class="banner__content">
+          <h2 class="banner__title">Un espacio seguro para avanzar</h2>
+          <p class="banner__subtitle mb-0">Ansiedad, estrés, autoestima, relaciones, duelos y cambios vitales.</p>
+          <div class="banner__actions">
+            <a class="btn btn-primary" href="#">Pedir cita</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5) Banner “glass” (tarjeta flotante) -->
+    <section class="banner banner--glass mb-4">
+      <div class="banner__inner">
+        <div class="banner__glassCard">
+          <h2 class="banner__title">¿No sabes por dónde empezar?</h2>
+          <p class="banner__subtitle">Te guío con una primera sesión enfocada en claridad y prioridades.</p>
+          <div class="banner__actions">
+            <a class="btn btn-dark" href="#">Agendar</a>
+            <a class="btn btn-link" href="#">Preguntas frecuentes</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6) Banner “diagonal” para destacar una promo -->
+    <section class="banner banner--diagonal mb-2">
+      <div class="banner__inner">
+        <div class="banner__content">
+          <h2 class="banner__title">Pack de sesiones</h2>
+          <p class="banner__subtitle mb-0">Ideal si quieres continuidad y estructura. Ahorra tiempo y gana foco.</p>
+        </div>
+        <a class="btn btn-light banner__btn" href="#">Ver opciones</a>
+      </div>
+    </section>
+<!-- 7) Banner “stats” (con métricas) -->
+<section class="banner banner--stats mb-4">
+  <div class="banner__inner">
+    <div class="banner__content">
+      <span class="kicker2">RESULTADOS</span>
+      <h2 class="banner__title">Mejora medible, paso a paso</h2>
+      <p class="banner__subtitle mb-0">Un banner útil si quieres transmitir confianza sin prometer milagros.</p>
+
+      <div class="stats">
+        <div class="stat">
+          <div class="stat__num">4.8/5</div>
+          <div class="stat__label">Valoración media</div>
+        </div>
+        <div class="stat">
+          <div class="stat__num">+120</div>
+          <div class="stat__label">Reseñas</div>
+        </div>
+        <div class="stat">
+          <div class="stat__num">48h</div>
+          <div class="stat__label">Primera respuesta</div>
+        </div>
+      </div>
+
+      <div class="banner__actions">
+        <a class="btn btn-dark" href="#">Leer reseñas</a>
+        <a class="btn btn-outline-secondary" href="#">Cómo funciona</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 8) Banner “timeline / pasos” -->
+<section class="banner banner--steps mb-4">
+  <div class="banner__inner">
+    <div class="banner__content">
+      <span class="kicker2">PROCESO</span>
+      <h2 class="banner__title">3 pasos simples</h2>
+      <p class="banner__subtitle">Para que el usuario entienda qué pasa después del click.</p>
+
+      <ol class="steps">
+        <li><strong>Contacto</strong><span>Te respondo con opciones</span></li>
+        <li><strong>Primera sesión</strong><span>Definimos objetivos</span></li>
+        <li><strong>Plan</strong><span>Seguimiento y ajustes</span></li>
+      </ol>
+
+      <div class="banner__actions">
+        <a class="btn btn-primary" href="#">Empezar</a>
+        <a class="btn btn-link" href="#">Dudas frecuentes</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 9) Banner “urgent” con contador fake (UI) -->
+<section class="banner banner--urgent mb-4">
+  <div class="banner__inner">
+    <div class="banner__content">
+      <span class="kicker2">PLAZAS</span>
+      <h2 class="banner__title">Quedan pocas citas esta semana</h2>
+      <p class="banner__subtitle mb-0">Úsalo con cuidado: si es falso, se nota y baja credibilidad.</p>
+
+      <div class="countdown" aria-label="Contador decorativo">
+        <div class="cd"><span>01</span><small>días</small></div>
+        <div class="cd"><span>12</span><small>horas</small></div>
+        <div class="cd"><span>37</span><small>min</small></div>
+      </div>
+
+      <div class="banner__actions">
+        <a class="btn btn-light" href="#">Ver horarios</a>
+        <a class="btn btn-outline-light" href="#">Contactar</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 10) Banner “testimonial” -->
+<section class="banner banner--testimonial mb-4">
+  <div class="banner__inner">
+    <div class="banner__content">
+      <span class="kicker2">TESTIMONIO</span>
+      <h2 class="banner__title">“Ahora tengo herramientas para manejar el estrés”</h2>
+      <p class="banner__subtitle">— Paciente (anónimo). Si usas testimonios, mejor con consentimiento y contexto.</p>
+
+      <div class="banner__actions">
+        <a class="btn btn-dark" href="#">Más historias</a>
+        <a class="btn btn-outline-secondary" href="#">Tu caso</a>
+      </div>
+    </div>
+
+    <div class="avatarCard" aria-hidden="true">
+      <div class="avatar"></div>
+      <div class="stars">★★★★★</div>
+      <div class="avatarLine"></div>
+      <div class="avatarLine w60"></div>
+    </div>
+  </div>
+</section>
+
+<!-- 11) Banner “pricing” simple -->
+<section class="banner banner--pricing mb-4">
+  <div class="banner__inner">
+    <div class="banner__content">
+      <span class="kicker2">TARIFAS</span>
+      <h2 class="banner__title">Transparente desde el inicio</h2>
+      <p class="banner__subtitle mb-0">Si vendes servicios, mostrar un “desde” ayuda a filtrar curiosos.</p>
+
+      <div class="pricing">
+        <div class="priceBox">
+          <div class="priceBox__title">Sesión</div>
+          <div class="priceBox__price">60€</div>
+          <div class="priceBox__note">50 min</div>
+        </div>
+        <div class="priceBox highlight">
+          <div class="priceBox__title">Pack 4</div>
+          <div class="priceBox__price">220€</div>
+          <div class="priceBox__note">Ahorra 20€</div>
+        </div>
+        <div class="priceBox">
+          <div class="priceBox__title">Online</div>
+          <div class="priceBox__price">55€</div>
+          <div class="priceBox__note">Flexible</div>
+        </div>
+      </div>
+
+      <div class="banner__actions">
+        <a class="btn btn-primary" href="#">Ver detalle</a>
+        <a class="btn btn-outline-secondary" href="#">Preguntar</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 12) Banner “newsletter / lead magnet” -->
+<section class="banner banner--lead mb-2">
+  <div class="banner__inner">
+    <div class="banner__content">
+      <span class="kicker2">RECURSO</span>
+      <h2 class="banner__title">Guía gratis: 7 técnicas para bajar la ansiedad</h2>
+      <p class="banner__subtitle mb-0">Captura leads sin ser pesado: una promesa concreta y útil.</p>
+
+      <form class="leadForm" onsubmit="return false;">
+        <input class="leadInput" type="email" placeholder="Tu email" aria-label="Email" />
+        <button class="btn btn-dark" type="submit">Enviar</button>
+      </form>
+      <small class="leadNote">Sin spam. Puedes darte de baja cuando quieras.</small>
+    </div>
+  </div>
+</section>
+
+<!-- HERO 1: Imagen + overlay + CTA -->
+<section class="hero hero--image">
+  <div class="container hero__inner">
+    <div class="hero__content">
+      <span class="hero__kicker">Psicología · Online y presencial</span>
+      <h1 class="hero__title">Un espacio claro para avanzar</h1>
+      <p class="hero__subtitle">Ansiedad, estrés, autoestima y cambios vitales. Enfoque práctico y cercano.</p>
+      <div class="hero__actions">
+        <a class="btn btn-primary" href="#">Pedir cita</a>
+        <a class="btn btn-outline-light" href="#">Ver servicios</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HERO 2: Minimal sólido (sin imagen) -->
+<section class="hero hero--solid">
+  <div class="container hero__inner">
+    <div class="hero__content hero__content--wide">
+      <span class="hero__kicker">Consulta</span>
+      <h1 class="hero__title">Mejorar no es magia: es proceso</h1>
+      <p class="hero__subtitle">Si buscas estructura, herramientas y seguimiento, aquí lo trabajamos con calma.</p>
+      <div class="hero__actions">
+        <a class="btn btn-dark" href="#">Empezar</a>
+        <a class="btn btn-outline-secondary" href="#">Preguntas frecuentes</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HERO 3: Split (texto + bloque imagen) -->
+<section class="hero hero--split">
+  <div class="container hero__split">
+    <div class="hero__content">
+      <span class="hero__kicker">Primera sesión</span>
+      <h1 class="hero__title">Ordenamos tu situación en 50 minutos</h1>
+      <p class="hero__subtitle">Objetivos realistas, plan simple, y pasos concretos para esta semana.</p>
+      <div class="hero__actions">
+        <a class="btn btn-primary" href="#">Reservar</a>
+        <a class="btn btn-outline-secondary" href="#">Cómo trabajo</a>
+      </div>
+    </div>
+    <div class="hero__media" aria-hidden="true"></div>
+  </div>
+</section>
+
+<!-- HERO 4: Video hero (placeholder) -->
+<section class="hero hero--video">
+  <div class="container hero__videoGrid">
+    <div class="hero__content">
+      <span class="hero__kicker">En 60 segundos</span>
+      <h1 class="hero__title">Cómo puede ayudarte la terapia</h1>
+      <p class="hero__subtitle">Una explicación breve para saber si encaja contigo (sin venderte humo).</p>
+      <div class="hero__actions">
+        <a class="btn btn-light" href="#">Ver vídeo</a>
+        <a class="btn btn-outline-light" href="#">Contactar</a>
+      </div>
+    </div>
+    <div class="hero__player" role="img" aria-label="Contenedor de vídeo">
+      <div class="hero__play" aria-hidden="true">▶</div>
+      <div class="hero__playerText">Vídeo (placeholder)</div>
+    </div>
+  </div>
+</section>
+
+<!-- HERO 5: Formulario (lead) -->
+<section class="hero hero--lead">
+  <div class="container hero__inner">
+    <div class="hero__content hero__content--wide">
+      <span class="hero__kicker">Contacto rápido</span>
+      <h1 class="hero__title">Cuéntame tu caso y te respondo hoy</h1>
+      <p class="hero__subtitle">Mensaje breve. Te digo si puedo ayudarte y qué opción encaja mejor.</p>
+
+      <form class="hero__form" onsubmit="return false;">
+        <input class="hero__input" type="text" placeholder="Nombre" aria-label="Nombre" />
+        <input class="hero__input" type="email" placeholder="Email" aria-label="Email" />
+        <button class="btn btn-primary hero__submit" type="submit">Enviar</button>
+      </form>
+      <small class="hero__note">Sin spam. Respuesta en 24–48h.</small>
+    </div>
+  </div>
+</section>
+
+<!-- HERO 6: Diagonal / branding fuerte -->
+<section class="hero hero--diagonal">
+  <div class="container hero__inner">
+    <div class="hero__content">
+      <span class="hero__kicker">Pack</span>
+      <h1 class="hero__title">Sesiones con estructura</h1>
+      <p class="hero__subtitle">Si quieres continuidad, trabajamos con un plan y seguimiento.</p>
+      <div class="hero__actions">
+        <a class="btn btn-light" href="#">Ver packs</a>
+        <a class="btn btn-outline-light" href="#">Consultar</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HERO 7: Imagen fija + parallax suave (sin JS) -->
+<section class="hero hero--parallax">
+  <div class="container hero__inner">
+    <div class="hero__content">
+      <span class="hero__kicker">Espacio</span>
+      <h1 class="hero__title">Un lugar tranquilo para hablar</h1>
+      <p class="hero__subtitle">xxxx</p>
+      <div class="hero__actions">
+        <a class="btn btn-primary" href="#">Ubicación</a>
+        <a class="btn btn-outline-light" href="#">Contacto</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HERO 8: “Card hero” (tarjeta flotante sobre fondo) -->
+<section class="hero hero--card">
+  <div class="container hero__inner">
+    <div class="hero__card">
+      <span class="hero__kicker">Bienvenida</span>
+      <h1 class="hero__title">Empieza por el siguiente paso</h1>
+      <p class="hero__subtitle">Un hero elegante: tarjeta con sombra sobre fondo suave.</p>
+      <div class="hero__actions">
+        <a class="btn btn-dark" href="#">Agendar</a>
+        <a class="btn btn-outline-secondary" href="#">Leer más</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="pro-banner pro-banner--ticker" id="proTicker" aria-label="Avisos">
+  <div class="container pro-banner__inner">
+    <div class="pro-badge">INFO</div>
+
+    <div class="pro-ticker" aria-live="polite">
+      <span class="pro-ticker__label">Actualidad:</span>
+      <span class="pro-ticker__text">Citas online disponibles esta semana.</span>
+    </div>
+
+    <div class="pro-actions">
+      <a class="pro-link" href="#">Ver horarios</a>
+      <a class="pro-btn" href="#">Contactar</a>
+    </div>
+  </div>
+</section>
+
+<section class="heroPro heroPro--float " id="heroProFloat">
+  <div class="container heroPro__grid bg-secondary">
+    <div class="heroPro__text">
+      <span class="heroPro__kicker">Presentación</span>
+      <h1 class="heroPro__title">Creamos espacios que se sienten hogar</h1>
+      <p class="heroPro__subtitle">Diseño limpio, ejecución profesional y acabados que duran. Te acompañamos de principio a fin.</p>
+      <div class="heroPro__actions">
+        <a class="btn btn-primary" href="#">Ver trabajos</a>
+        <a class="btn btn-outline-secondary" href="#">Pedir presupuesto</a>
+      </div>
+    </div>
+
+    <div class="heroPro__media">
+      <div class="heroPro__blob heroPro__blob--a" aria-hidden="true"></div>
+      <div class="heroPro__blob heroPro__blob--b" aria-hidden="true"></div>
+
+      <div class="heroPro__imgWrap">
+        <img class="heroPro__img" src="img/despacho2.jpg" alt="Imagen de presentación" />
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="heroPro heroPro--parallax" id="heroProParallax">
+  <div class="container heroPro__grid bg-secondary">
+    <div class="heroPro__text">
+      <span class="heroPro__kicker">Presentación</span>
+      <h1 class="heroPro__title">Calidad visible en cada detalle</h1>
+      <p class="heroPro__subtitle">Materiales bien elegidos, ejecución limpia y tiempos claros.</p>
+      <div class="heroPro__actions">
+        <a class="btn btn-primary" href="#">Proyectos</a>
+        <a class="btn btn-outline-secondary" href="#">Contacto</a>
+      </div>
+    </div>
+
+    <div class="heroPro__media">
+      <div class="heroPro__imgWrap heroPro__imgWrap--parallax">
+        <img class="heroPro__img" src="img/despacho2.jpg" alt="Imagen de presentación" />
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="heroPro heroPro--reveal" id="heroProReveal">
+  <div class="container heroPro__grid bg-secondary5">
+    <div class="heroPro__text heroReveal">
+      <span class="heroPro__kicker">Presentación</span>
+      <h1 class="heroPro__title">Reformas con método y garantías</h1>
+      <p class="heroPro__subtitle">Planificación, ejecución y control. Sin sorpresas.</p>
+      <div class="heroPro__actions">
+        <a class="btn btn-primary" href="#">Solicitar visita</a>
+        <a class="btn btn-outline-secondary" href="#">Ver trabajos</a>
+      </div>
+    </div>
+
+    <div class="heroPro__media heroReveal">
+      <div class="heroPro__imgWrap">
+        <img class="heroPro__img" src="img/despacho2.jpg" alt="Imagen de presentación" />
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  </main>
+<script>
+(() => {
+  const root = document.getElementById("proTicker");
+  if (!root) return;
+
+  const textEl = root.querySelector(".pro-ticker__text");
+  if (!textEl) return;
+
+  const items = [
+    "Citas online disponibles esta semana.",
+    "Respuesta en 24–48h con propuesta de horarios.",
+    "Primera sesión: objetivos claros y plan de trabajo.",
+    "Atención presencial y online. Horarios flexibles."
+  ];
+
+  const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  let i = 0;
+
+  function swap(){
+    i = (i + 1) % items.length;
+    if (reduced){
+      textEl.textContent = items[i];
+      return;
+    }
+    textEl.classList.add("is-fading");
+    setTimeout(() => {
+      textEl.textContent = items[i];
+      textEl.classList.remove("is-fading");
+    }, 260);
+  }
+
+  setInterval(swap, 4200);
+})();
+</script>
+
+<script>
+(() => {
+  const root = document.getElementById("heroProParallax");
+  if (!root) return;
+
+  const imgWrap = root.querySelector(".heroPro__imgWrap--parallax");
+  if (!imgWrap) return;
+
+  const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  if (reduced) return;
+
+  function onScroll(){
+    const r = root.getBoundingClientRect();
+    const vh = window.innerHeight || 800;
+    const progress = Math.min(1, Math.max(0, 1 - (r.top / vh)));
+    const y = (progress - 0.5) * 18; // MUY suave
+    imgWrap.style.transform = `translateY(${y}px)`;
+  }
+
+  onScroll();
+  window.addEventListener("scroll", onScroll, { passive: true });
+})();
+</script>
+
+<script>
+(() => {
+  const root = document.getElementById("heroProReveal");
+  if (!root) return;
+
+  const targets = Array.from(root.querySelectorAll(".heroReveal"));
+  if (!targets.length) return;
+
+  const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  if (reduced){
+    targets.forEach(t => t.classList.add("is-in"));
+    return;
+  }
+
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach((e) => {
+      if (e.isIntersecting) {
+        e.target.classList.add("is-in");
+        io.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.2 });
+
+  targets.forEach(t => io.observe(t));
+})();
+</script>
+
+
+</body>
+</html>
